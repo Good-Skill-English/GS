@@ -1,0 +1,86 @@
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  font-weight:100;
+  margin: 0;
+  padding-top: 8%;
+}
+p{
+  margin: 0;
+  text-align: left;
+}
+
+nav{
+  background-color: white;
+}
+
+#nextShow{
+  position: relative;
+  top: 40px;
+  place-content:center;
+  text-align: center;
+  background-color: #3F688C;
+  background-size: auto;
+  background-image: url('images/EnglandRiver-img.jpg');
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-position: top center;
+  height: 1080px;
+}
+
+.container-fluid{
+  background-color: white;
+  padding: 5px 12px;
+  position:fixed;
+  top: 5px;
+  transition: top 0.3s;
+}
+/* Mobiles */
+@media only screen and (max-width:600px) {
+
+  body {
+    background-color: red;
+  }
+h1{
+  padding: 4% 2% 0 2%;
+  font-size: 1rem;
+}
+p{
+  padding-left: 7%;
+}
+
+  #nextShow{
+    color: rgba(0,0,0);
+    background-size:cover;
+    background-image: url('images/EnglandRiver-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center bottom;
+    height: 640px;
+  }
+
+  #ourStrategy{
+    color: #2C6CBF;
+    height: 640px;
+  }
+}
+
+.title{
+  background:rgba(0, 0, 0, 0.2);
+}
+
+/* Tablets */
+@media only screen and (min-width:768px) {
+  body {
+    background-color: purple;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width:992px) {
+  body {
+    background-color: blue;
+  }
+}
