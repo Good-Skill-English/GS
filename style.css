@@ -17,8 +17,6 @@ nav{
 }
 
 #nextShow{
-  position: relative;
-  top: 40px;
   place-content:center;
   text-align: center;
   background-color: #3F688C;
@@ -32,9 +30,9 @@ nav{
 
 .container-fluid{
   background-color: white;
-  padding: 5px 12px;
+  /* padding: 5px 12px;
   position:fixed;
-  top: 5px;
+  top: 5px; */
   transition: top 0.3s;
 }
 /* Mobiles */
