@@ -1,15 +1,14 @@
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 h1{
-  font-weight:100;
+  font-weight:700;
   margin: 0;
-  padding-top: 8%;
+  padding-top: 10%;
 }
 p{
   margin: 0;
-  text-align: left;
 }
 
 nav{
@@ -19,7 +18,7 @@ nav{
 #nextShow{
   place-content:center;
   text-align: center;
-  background-color: #3F688C;
+  background-color: inherit;
   background-size: auto;
   background-image: url('images/EnglandRiver-img.jpg');
   background-repeat: no-repeat;
@@ -30,45 +29,84 @@ nav{
 
 .container-fluid{
   background-color: white;
-  /* padding: 5px 12px;
-  position:fixed;
-  top: 5px; */
   transition: top 0.3s;
 }
 /* Mobiles */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:500px) {
 
   body {
-    background-color: red;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 h1{
-  padding: 4% 2% 0 2%;
-  font-size: 1rem;
+  line-height: 1;
+  padding: 20px 5px 10px 30px;
+  font-size: 2rem;
 }
+h4{
+  color: rgba(255,255,255);
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 30% 0 0 30px;
+}
+
 p{
-  padding-left: 7%;
+  padding-left: 2%;
 }
 
   #nextShow{
-    color: rgba(0,0,0);
+    color: inherit;
     background-size:cover;
     background-image: url('images/EnglandRiver-img.jpg');
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-position: center bottom;
-    height: 640px;
+    height: 100%;
   }
-
-  #ourStrategy{
-    color: #2C6CBF;
-    height: 640px;
-  }
-}
 
 .title{
+  text-align: left;
+  padding-top: 30%;
+  color: rgba(255,255,255);
   background:rgba(0, 0, 0, 0.2);
 }
+.next-liveTag{
+  margin: 20px 0 0 30px;
+  color: rgba(166, 43, 31);
+  font-weight: bolder;
+  background: rgba(255,255,255,0.5);
+  font-size: 1.5rem;
+}
 
+.presenterTagName{
+  padding-left: 30px;
+}
+
+.btn-enrol{
+  color: rgba(255,255,255);
+  font-size: 1rem;
+  font-weight: bold;
+  background: rgba(0,0,0,0.3);
+  margin-bottom: 10%;
+  width: auto;
+  height: auto;
+}
+
+/* Section: Our Strategy */
+#ourStrategy{
+  padding: 10% 30px 10% 30px;
+  height: 100%;
+  color: #2C6CBF;
+}
+
+/* Section:My Story */
+#myStory{
+    padding: 10% 30px 10% 30px;
+
+}
+
+}
 /* Tablets */
 @media only screen and (min-width:768px) {
   body {
