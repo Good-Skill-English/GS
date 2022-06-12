@@ -19,7 +19,7 @@ nav{
   place-content:center;
   text-align: center;
   background-color: inherit;
-  background-size: auto;
+  background-size: cover;
   background-image: url('images/EnglandRiver-img.jpg');
   background-repeat: no-repeat;
   background-attachment:fixed;
@@ -63,7 +63,7 @@ p{
     background-size:cover;
     background-image: url('images/EnglandRiver-img.jpg');
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment:scroll;
     background-position: center bottom;
     height: 812px;
   }
