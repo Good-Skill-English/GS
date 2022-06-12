@@ -1,10 +1,14 @@
+$("homePage").ready(function(){
+  document.location.href = "#homePage";
+});
+
 var prevScrollPos = window.pageYOffset;
 window.onscroll = function(){
   var currentScrollPos = window.pageYOffset;
   if(prevScrollPos > currentScrollPos){
-    document.querySelector(".container-fluid").style.top = "0";
+    $(".container-fluid").css("top","0");
   }else{
-    document.querySelector(".container-fluid").style.top = "-50px";
+    $(".container-fluid").css("top","-50px");
   }
   prevScrollPos = currentScrollPos;
 };
