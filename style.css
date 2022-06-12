@@ -102,6 +102,20 @@ p{
 }
 
 /* Section: Our Strategy */
+#Good-Skill-Show{
+  padding: 10% 30px 10% 30px;
+  color: #2C6CBF;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.GS-show-explainationBox{
+  padding: 10% 15px 5% 5px;
+  font-size: 1rem;
+  line-height:1.7rem;
+}
+.btn-calendly{
+  margin: 10px 0;
+}
 #ourStrategy{
   background-color: rgba( 0, 153, 221);
   color: rgb(255,255,255);
