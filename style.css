@@ -1,12 +1,25 @@
 
 body{
   font-family: 'Lato', sans-serif;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+    text-align: justify;
+    text-justify: inter-word;
 }
 h1{
   font-weight:700;
   margin: 0;
-  padding-top: 10%;
+  line-height: 1.25;
+  padding: 20px 5px 10px 30px;
+  font-size: 2.25rem;
 }
+h4{
+  color: rgb(255,255,255);
+  font-weight: lighter;
+  padding: 10% 0;
+}
+
 p{
   margin: 0;
 }
@@ -20,36 +33,91 @@ nav{
   text-align: center;
   background-color: inherit;
   background-size: cover;
-  background-image: url('images/EnglandRiver-img.jpg');
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-position: top center;
-  height: 1080px;
 }
+
+.topicShow{
+  color: rgb(255,255,255);
+  background:rgba(0, 0, 0, 0.2);
+}
+
+.next-liveTag{
+  color: rgb(166, 43, 31);
+  font-weight: bolder;
+  background: rgba(255,255,255,0.5);
+}
+
 
 .container-fluid{
   background-color: white;
   transition: top 0.3s;
 }
 
+.btn-enrol{
+  color: rgb(255,255,255);
+  font-size: 1rem;
+  font-weight: bold;
+  background: rgba(0,0,0,0.3);
+  margin: 0 0 10% 20%;
+  width: 80%;
+  height: auto;
+}
+.btn-enrol:visited{
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+
+#Good-Skill-Show{
+  color: #2C6CBF;
+}
+
+
+.GS-show-explainationBox{
+  font-size: 1rem;
+  line-height:1.7rem;
+}
+
+.btn-outline-secondary{
+  margin: 0 0 0 15%;
+  width: 70%;
+}
+
+
+/* Section ourstrategy */
+#ourStrategy{
+  background-color: rgb( 0, 153, 221);
+  color: rgb(255,255,255);
+}
+
+  /* Video  */
+.embed-responsive-16by9{
+  position:relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.embed-responsive-16by9 .embed-responsive-item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /* Mobiles */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:576px) {
 
-  body {
-    background-color: white;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
 h1{
   line-height: 1.25;
   padding: 20px 5px 10px 30px;
   font-size: 2rem;
 }
-h4{
-  color: rgba(255,255,255);
+
+#inviationPhrase{
   font-size: 1.2rem;
-  font-weight: lighter;
   padding: 80% 0 0 30px;
 }
 
@@ -57,24 +125,20 @@ p{
   padding-left: 2%;
 }
 
-
   #nextShow{
     color: inherit;
-    background-size:cover;
-    background-image: url('images/EnglandRiver-img.jpg');
-    background-repeat: no-repeat;
     background-attachment:scroll;
+      background-image: url('images/benjamin-davies-sm.jpg');
     background-position: center bottom;
-    height: 812px;
+    height: 600px;
   }
 
 .topicShow{
   text-align: left;
   position: relative;
   top: 20%;
-  color: rgba(255,255,255);
-  background:rgba(0, 0, 0, 0.2);
 }
+
 .next-liveTag{
   margin: 20px 0 0 30px;
   color: rgba(166, 43, 31);
@@ -88,12 +152,9 @@ p{
 }
 
 .btn-enrol{
-  color: rgb(255,255,255);
   font-size: 1rem;
-  font-weight: bold;
-  background: rgba(0,0,0,0.3);
-  margin-bottom: 10%;
-  width: auto;
+  margin: 0 0 10% 25%;
+  width: 50%;
   height: auto;
 }
 .btn-enrol:visited{
@@ -104,77 +165,129 @@ p{
 /* Section: Our Strategy */
 #Good-Skill-Show{
   padding: 10% 30px 10% 30px;
-  color: #2C6CBF;
-  text-align: justify;
-  text-justify: inter-word;
 }
+
 .GS-show-explainationBox{
   padding: 10% 15px 5% 5px;
-  font-size: 1rem;
-  line-height:1.7rem;
 }
 .btn-calendly{
   margin: 10px 0;
 }
+
+.btn-outline-secondary{
+  margin: 0;
+  width: auto;
+}
+
+/* Section Our Stratery */
 #ourStrategy{
-  background-color: rgba( 0, 153, 221);
-  color: rgb(255,255,255);
   padding: 10% 30px 10% 30px;
   height: 100%;
 
 }
 
-/* Section:My Story */
-#myStory{
-    padding: 10% 30px 10% 30px;
-    height: 100%;
-    color: #2C6CBF;
-}
 
-/* Section: Inspirational Personages */
-#inspirationalPersonages{
-      background-color: rgba(255, 153, 51);
-    padding: 10% 30px 10% 30px;
-    height: 100%;
+.embed-responsive{   /*  Video */
+  margin:10% 0;
 }
-
-#theWorldWeLive{
-  padding: 10% 30px 10% 30px;
-  height: 100%;
-}
-
 
 
 }
 /* Tablets */
-@media only screen and (min-width:768px) {
-  body {
-    background-color: purple;
-  }
+@media only screen and (min-width:768px),@media only screen and (min-width:1024px) {
+
+#inviationPhrase{
+    color: rgb(255,255,255);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 55% 0 0 30px;
+}
   #nextShow{
     color: inherit;
-    background-size:cover;
-    background-image: url('images/EnglandRiver-img.jpg');
-    background-repeat: no-repeat;
     background-attachment:fixed;
+    background-image: url("images/benjamin-davies-md.jpg");
     background-position: center bottom;
-    height: 800px;
+    height: 850px;
   }
+
+  .topicShow{
+    text-align: center;
+    position: relative;
+    top: 30%;
+  }
+
+  .next-liveTag{
+    margin-top: 40px;
+    font-size: 2rem;
+  }
+
+  .GS-show-explainationBox{
+    padding: 8% 15px 8% 5px;
+  }
+
+  #Good-Skill-Show{
+    padding: 10% 100px 10% 100px;
+  }
+
+  #ourStrategy{
+    padding: 10% 100px 10% 100px;
+    height: 100%;
+
+  }
+
+  .embed-responsive{   /*  Video */
+    margin:8% 0;
+  }
+
+  .btn-calendly{
+        margin: 20px 0;
+    width: auto;
+  }
+
+  .btn-outline-secondary{
+    margin: 0;
+    width: auto;
+  }
+
 }
 
 /* Desktops */
-@media only screen and (min-width:992px) {
-  body {
-    background-color: blue;
-  }
+@media only screen and (min-width:1280px) {
 
   #nextShow{
     color: inherit;
-    background-size:cover;
-    background-image: url('images/EnglandRiver-img.jpg');
-    background-repeat: no-repeat;
+    background-image: url("images/benjamin-davies-lg.jpg");
     background-attachment:fixed;
     background-position: center bottom;
     height: 924px;
   }
+
+  #Good-Skill-Show{
+    padding: 5% 350px 10% 350px;
+  }
+
+  .GS-show-explainationBox{
+    padding: 5% 15px 5% 5px;
+  }
+
+  .btn-calendly{
+    width: auto;
+    position: relative;
+    left: -155px;
+  }
+
+  .btn-outline-secondary{
+    margin: 0;
+    width: auto;
+    position: relative;
+    left: -155px;
+  }
+
+  #ourStrategy{
+    padding: 5% 350px 10% 350px;
+    height: 100%;
+  }
+
+
+
 }
